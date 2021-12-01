@@ -22,6 +22,6 @@ def main():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     
-    return render_template('templates/index.html', prediction_text ='The estimate price is :{}'.format(prediction))
+    return render_template('index.html', prediction_text ='The estimate price is :{}'.format(prediction))
 if __name__ == '__main__':  
    app.run(debug = True)
